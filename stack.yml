@@ -2,5 +2,5 @@ version: '3'
 services:
   trigger:
     image: franela/dind
-    command: sh -c "git clone https://github.com/pli01/labs-play-with-docker  && ./labs-play-with-docke/demo/build-demo.sh && tail -f /dev/null"
+    command: sh -c "git clone https://github.com/pli01/labs-play-with-docker  && ./labs-play-with-docker/demo/build-demo.sh && tail -f /dev/null"
     volumes: [ '/var/run/docker.sock:/var/run/docker.sock' ]
